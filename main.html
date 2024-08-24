@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<!-- The section containing the buttons for music -->
+    <div id="buttons">
+        <!-- Each button corresponds to a different sound -->
+        <button class="btn" data-sound="applause">applause</button>
+        <button class="btn" data-sound="boo">boo</button>
+        <button class="btn" data-sound="gasp">gasp</button>
+        <button class="btn" data-sound="tada">tada</button>
+        <button class="btn" data-sound="victory">victory</button>
+        <button class="btn" data-sound="wrong">wrong</button>
+        <!-- The stop button to stop any playing sound -->
+        <button class="btn stop">stop</button>
+    </div>
 
+    <!-- Embedding the audio files -->
+    <audio id="applause" src="sounds/applause.mp3"></audio>
+    <audio id="boo" src="sounds/boo.mp3"></audio>
+    <audio id="gasp" src="sounds/gasp.mp3"></audio>
+    <audio id="tada" src="sounds/tada.mp3"></audio>
+    <audio id="victory" src="sounds/victory.mp3"></audio>
+    <audio id="wrong" src="sounds/wrong.mp3"></audio>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
